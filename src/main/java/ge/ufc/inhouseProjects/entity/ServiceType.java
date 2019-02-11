@@ -7,12 +7,12 @@ import java.util.List;
 
 @Data
 @Entity
-@Table(name = "SERVICE_TYPES")
+@Table(name = "my_test_service_types")
 public class ServiceType {
     @Id
     @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Long id;
 
     @Column(name = "name")
     private String name;

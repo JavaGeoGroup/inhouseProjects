@@ -1,4 +1,10 @@
 package ge.ufc.inhouseProjects.dao;
 
-public class ServiceTypeDaoImpl  {
+import ge.ufc.inhouseProjects.entity.ServiceType;
+import org.springframework.stereotype.Repository;
+
+//@Repository
+public class ServiceTypeDaoImpl {
+
+
 }

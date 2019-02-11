@@ -8,11 +8,10 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
-@Repository
-@Transactional(rollbackFor = Throwable.class)
 public interface ServiceTypeDao extends CrudRepository<ServiceType,Long> {
 
-    //@Query("SELECT u FROM ServiceType u WHERE u.id = ?1")
+
     //ServiceType findServiceTypeById(int id);
+    @Query("SELECT u FROM ServiceType u WHERE u.name = ?1")
     ServiceType findServiceTypeByName(String name);
 }
