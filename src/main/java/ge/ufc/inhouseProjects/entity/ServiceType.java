@@ -3,6 +3,7 @@ package ge.ufc.inhouseProjects.entity;
 import lombok.Data;
 
 import javax.persistence.*;
+
 import java.util.List;
 
 @Data
@@ -12,7 +13,7 @@ public class ServiceType {
     @Id
     @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private long id; //use the same type than in repository! int =! long
 
     @Column(name = "name")
     private String name;
