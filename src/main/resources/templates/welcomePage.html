@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title th:utext="${title}"></title>
+    <link rel="stylesheet" th:href="@{/css/styles.css}"/>
 </head>
 <body>
+<div th:insert = "Navbar :: navbar"></div>
+<div th:insert = "projects"></div>
     <h2>Message: <span th:utext="${message}"></span></h2>
-
 </body>
 </html>
