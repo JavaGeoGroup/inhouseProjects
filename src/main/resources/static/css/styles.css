@@ -1,4 +1,8 @@
-#nav_bar_style,
+#nav_bar_style{
+  margin-top: 10%;
+  margin-left: 1%;
+}
+
 #nav_bar_style ul,
 #nav_bar_style ul li,
 #nav_bar_style ul li a {
