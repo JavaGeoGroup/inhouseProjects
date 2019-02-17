@@ -10,8 +10,13 @@ import java.util.List;
 
 @Service
 public class ServiceTypeServiceImpl implements  ServiceTypeService {
+
+    private ServiceTypeDao repository;
+
     @Autowired
-    ServiceTypeDao repository;
+    public ServiceTypeServiceImpl(ServiceTypeDao repository) {
+        this.repository = repository;
+    }
 
     @Override
     public ServiceType findServiceTypeByName(String name) {

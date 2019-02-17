@@ -28,4 +28,10 @@ public class ProjectServiceIml implements ProjectService{
     public Project findById(Long id){
         return dao.findById(id).get();
     }
+
+    @Override
+    @Transactional(rollbackFor = Throwable.class)
+    public  void deleteProjectById(Long id){
+        dao.deleteById(id);
+    }
 }

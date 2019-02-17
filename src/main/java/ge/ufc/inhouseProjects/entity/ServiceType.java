@@ -7,7 +7,7 @@ import java.util.List;
 
 @Data
 @Entity
-@Table(name = "my_test_service_types")
+@Table(name = "service_types")
 public class ServiceType {
     @Id
     @Column(name = "id")
